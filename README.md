@@ -35,8 +35,8 @@ This API allows you to store and retrieve metadata for music tracks from the Spo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-project-name.git
-   cd your-project-name
+   git clone https://github.com/amiankit11/SpotifyAPI.git
+   cd SpotifyAPI
 
 1. Install dependencies:
 
