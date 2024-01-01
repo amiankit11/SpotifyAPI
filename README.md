@@ -20,7 +20,6 @@ This API allows you to store and retrieve metadata for music tracks from the Spo
 - Create tracks with metadata fetched from the Spotify API
 - Retrieve track metadata by ISRC
 - Retrieve tracks by artist name
-- User authentication for protected endpoints
 
 ## Getting Started
 
