@@ -13,11 +13,7 @@ This API allows you to store and retrieve metadata for music tracks from the Spo
   - [Create Track](#create-track)
   - [Get Track by ISRC](#get-track-by-isrc)
   - [Get Tracks by Artist](#get-tracks-by-artist)
-  - [User Authentication](#user-authentication)
 - [Usage](#usage)
-- [Security](#security)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -53,8 +49,9 @@ go get -u github.com/joho/godotenv
 
 3. Run the application: go run main.go
 
-API Endpoints
-Create Track
+## API Endpoints
+
+### Create Track
 Endpoint:
 
 POST /api/tracks
@@ -65,13 +62,17 @@ Request:
 
 Body: JSON with the ISRC of the track
 
+```bash 
 curl -X POST -d '{"isrc": "USVT10300001"}' http://localhost:8080/api/tracks
+```
 
-
-Get Track by ISRC
+### Get Track by ISRC
 Endpoint:
 
-GET /api/tracks/:isrc
+```bash 
+GET http://localhost:8080/api/tracks/:isrc
+```
+
 Description:
 Retrieve metadata for a specific track using its ISRC.
 
@@ -79,13 +80,16 @@ Request:
 
 Path Parameter: ISRC (International Standard Recording Code)
 
+```bash 
 curl http://localhost:8080/api/tracks/USVT10300001
+```
 
-
-Get Tracks by Artist
+### Get Tracks by Artist
 Endpoint:
 
-GET /api/artists/:artistName/tracks
+```bash 
+GET http://localhost:8080/api/artists/:artistName/tracks
+```
 Description:
 Retrieve tracks by a specific artist using a "like" search in the database.
 
@@ -93,7 +97,9 @@ Request:
 
 Path Parameter: Artist Name
 
+```bash 
 curl http://localhost:8080/api/artists/artistName/tracks
+```
 
-Usage
+# Usage
 Follow the examples provided in each endpoint's description to interact with the API.
