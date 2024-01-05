@@ -36,13 +36,16 @@ This API allows you to store and retrieve metadata for music tracks from the Spo
    ```bash
    git clone https://github.com/amiankit11/SpotifyAPI.git
    cd SpotifyAPI
+   ```
 
 1. Install dependencies:
 
-go get -u github.com/gin-gonic/gin
-go get -u github.com/jinzhu/gorm/dialects/postgres
-go get -u github.com/lib/pq
-go get -u github.com/joho/godotenv
+   ```bash
+   go get -u github.com/gin-gonic/gin
+   go get -u github.com/jinzhu/gorm/dialects/postgres
+   go get -u github.com/lib/pq
+   go get -u github.com/joho/godotenv
+   ```
 
 2. Set up your PostgreSQL database and update the .env file with your configuration.
 
